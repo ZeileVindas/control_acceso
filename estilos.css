@@ -1,0 +1,138 @@
+/* ==========================================
+   PALETA PUFF COFFEE & CAPPUCCINO
+   Cherry Red: #8E1825
+   Columbia Blue: #C8D9EC
+   Butter Yellow: #FFEDAD
+   Dark Chocolate: #3D2722
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cherry-red: #8E1825;
+    --columbia-blue: #C8D9EC;
+    --butter-yellow: #FFEDAD;
+    --dark-chocolate: #3D2722;
+    --bg-light: #FBF8F5;
+}
+
+/* Tipografía y Fondo General */
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--bg-light) !important;
+    color: var(--dark-chocolate) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--dark-chocolate) !important;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: var(--dark-chocolate) !important;
+    border-bottom: 4px solid var(--cherry-red) !important;
+    padding: 0.8rem 1.5rem !important;
+}
+
+.navbar-brand {
+    color: var(--butter-yellow) !important;
+    font-size: 1.4rem !important;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.nav-link:hover, .nav-link.active, .nav-link.text-danger {
+    color: var(--butter-yellow) !important;
+}
+
+/* Tarjetas y Contenedores Principales */
+.card {
+    border-radius: 18px !important;
+    border: 1px solid rgba(61, 39, 34, 0.1) !important;
+    box-shadow: 0 8px 20px rgba(61, 39, 34, 0.06) !important;
+    background-color: #FFFFFF !important;
+    overflow: hidden !important;
+}
+
+/* 🔴 FORZAR BOTONES A CHERRY RED (Iniciar Sesión, Registrar, Guardar, etc.) */
+.btn-primary, .btn-success, button[type="submit"], input[type="submit"], .btn-info {
+    background-color: var(--cherry-red) !important;
+    border-color: var(--cherry-red) !important;
+    color: #FFFFFF !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.4rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover, .btn-success:hover, button[type="submit"]:hover, input[type="submit"]:hover, .btn-info:hover {
+    background-color: #6d121c !important;
+    border-color: #6d121c !important;
+    color: #FFFFFF !important;
+    transform: translateY(-1px);
+}
+
+/* Botones Secundarios y Filtros */
+.btn-outline-primary, .btn-secondary {
+    background-color: var(--columbia-blue) !important;
+    border-color: var(--columbia-blue) !important;
+    color: var(--dark-chocolate) !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+}
+
+.btn-outline-secondary {
+    background-color: var(--butter-yellow) !important;
+    border-color: var(--butter-yellow) !important;
+    color: var(--dark-chocolate) !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+}
+
+/* 🟡 FRANJAS Y ENCABEZADOS DE FORMULARIOS (Adiós al azul por defecto) */
+.card-header, .bg-primary, .table-light, thead th, .bg-info, .bg-info-card {
+    background-color: var(--butter-yellow) !important;
+    color: var(--dark-chocolate) !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+/* Si hay elementos donde el texto dentro del header deba ser oscuro */
+.card-header h3, .card-header h4, .card-header h5, .card-header span {
+    color: var(--dark-chocolate) !important;
+}
+
+/* Cajas de Texto e Inputs */
+.form-control, .form-select {
+    border-radius: 12px !important;
+    border: 1px solid #D8D0C5 !important;
+    padding: 0.6rem 1rem !important;
+    background-color: #FAFAFA !important;
+    color: var(--dark-chocolate) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--cherry-red) !important;
+    box-shadow: 0 0 0 0.25rem rgba(142, 24, 37, 0.15) !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Tablas */
+.table {
+    color: var(--dark-chocolate) !important;
+}
+
+.badge.bg-success {
+    background-color: var(--butter-yellow) !important;
+    color: var(--dark-chocolate) !important;
+    font-weight: 600 !important;
+    padding: 0.4em 0.8em !important;
+    border-radius: 8px !important;
+}
